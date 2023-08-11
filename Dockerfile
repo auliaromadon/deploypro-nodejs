@@ -1,5 +1,4 @@
-ARG NODE_VERSION
-FROM node:${NODE_VERSION}
+FROM node:18-alpine
 WORKDIR /home/node
 USER node
 COPY --chown=node:node ./package* ./
